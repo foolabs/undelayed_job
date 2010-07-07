@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
   s.summary = 'undelaye delayed_job'
   s.add_dependency 'delayed_job'
   s.add_development_dependency 'rspec'
-  s.files        = Dir.glob("{lib,rails}/**/*")
+  s.files        = Dir.glob("{lib}/**/*")
   s.require_path = 'lib'
 end
