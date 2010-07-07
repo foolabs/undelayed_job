@@ -9,5 +9,9 @@ describe Delayed::Backend::Undelayed::Job do
     task.should_receive(:perform)
     subject.enqueue task
   end
+
+  it do
+    subject.find_available('worker').should be_empty
+  end
 end
 

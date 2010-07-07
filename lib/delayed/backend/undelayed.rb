@@ -12,6 +12,9 @@ module Delayed
           job.invoke_job
           job
         end
+        def self.find_available(worker_name, limit = 5, max_run_time = Worker.max_run_time)
+          []
+        end
       end
     end
   end
