@@ -13,7 +13,9 @@ Gem::Specification.new do |s|
   s.version       = Delayed::Backend::Undelayed::VERSION
   s.summary       = 'undelaye delayed_job'
   s.add_dependency 'delayed_job'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'activesupport', '~>2.3'
+  s.add_development_dependency 'rspec', '~>1.3'
+  s.add_development_dependency "bundler", ">= 1.0.0"
   s.files         = Dir.glob("{lib,spec}/**/*")
   s.require_path  = 'lib'
 end
